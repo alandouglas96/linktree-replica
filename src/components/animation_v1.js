@@ -32,6 +32,7 @@ export default function Animation() {
           }deg)`,
         }}
       >
+        {/* TESTINGAL -> Improve class naming */}
         <div ref={anchorRef} className={styles.element1}></div>
         <div
           className={styles.element2}

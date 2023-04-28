@@ -1,91 +1,33 @@
-import Animation from '../components/animation_v1'
+import { NavBar } from '../components/navigation'
+import { Section1 } from '../components/sections/section_1'
+import { Section2 } from '../components/sections/section_2'
+import { Section3 } from '../components/sections/section_3'
+import { Section4 } from '../components/sections/section_4'
+import { Section5 } from '../components/sections/section_5'
+import { Section6 } from '../components/sections/section_6'
+import { Section7 } from '../components/sections/section_7'
+import { Section8 } from '../components/sections/section_8'
+import { Section9 } from '../components/sections/section_9'
+import { Section10 } from '../components/sections/section_10'
+import { Section11 } from '../components/sections/section_11'
 import styles from './page.module.css'
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <section className={styles.section1}>
-        <div
-          style={{
-            display: 'flex',
-            width: '90%',
-            paddingTop: '150px',
-            margin: 'auto',
-          }}
-        >
-          <div className={styles.element1}>
-            <h1 className={styles.h1}>
-              Everything you are. In one, simple link in bio.
-            </h1>
-            <p className={styles.p}>
-              Join 35M+ people using Linktree for their link in bio. One link to
-              help you share everything you create, curate and sell from your
-              Instagram, TikTok, Twitter, YouTube and other social media
-              profiles.
-            </p>
-            <form style={{ display: 'flex', gap: '12px' }}>
-              <div
-                style={{
-                  display: 'flex',
-                  height: '62px',
-                  width: '243px',
-                  backgroundColor: 'white',
-                  borderRadius: '8px',
-                  padding: '19px 16px',
-                  color: 'rgb(103, 107, 95)',
-                  fontFamily: 'Arial, sans-serif',
-                  fontSize: '18px',
-                }}
-              >
-                <p
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                  }}
-                >
-                  linktr.ee/
-                </p>
-                <p
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                  }}
-                >
-                  <input
-                    type="text"
-                    placeholder="yourname"
-                    style={{
-                      border: '0px',
-                      outline: '0px',
-                      fontSize: '18px',
-                      width: '70%',
-                    }}
-                  />
-                </p>
-              </div>
-              <div>
-                <button
-                  style={{
-                    width: '212px',
-                    height: '62px',
-                    backgroundColor: 'rgb(233, 192, 233)',
-                    border: '0px',
-                    outline: '0px',
-                    fontSize: '18px',
-                    color: 'rgb(30, 35, 48)',
-                    borderRadius: '31px',
-                  }}
-                >
-                  Claim your Linktree
-                </button>
-              </div>
-            </form>
-          </div>
-          <div className={styles.element2}>
-            <Animation />
-          </div>
-        </div>
-      </section>
+      <div className={styles.navBackgroundPosition} />
+      <NavBar />
+      <Section1 />
+      <Section2 />
+      <Section3 />
+      <Section4 />
+      <Section5 />
+      <Section6 />
+      <Section7 />
+      <Section8 />
+      <Section9 />
+      <Section10 />
+      <Section11 />
     </main>
   )
 }

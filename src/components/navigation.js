@@ -1,3 +1,11 @@
-export default function NavBar() {
-  return <div className={styles.navBarContainer}></div>
+import styles from './navigation.module.css'
+
+function NavBar() {
+  return (
+    <div className={styles.stickyElement}>
+      <div className={styles.stickyInner}>STICKEY</div>
+    </div>
+  )
 }
+
+export { NavBar }
